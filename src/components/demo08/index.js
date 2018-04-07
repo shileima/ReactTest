@@ -13,6 +13,7 @@ class DidMount extends Component {
     }
 
     componentDidMount(){
+        console.log('componentDidMount 只执行一次,相当于 onload()')
         // 箭头函数没有this指向,所以componentDidMount下的所有this指向class组件DidMount
         this.timer = setInterval(() => { 
             let opacity = this.state.opacity
