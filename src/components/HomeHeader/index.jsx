@@ -2,9 +2,19 @@ import React from 'react';
 import './style.less'
 
 class HomeHeader extends React.Component {
-    // constructor(props, context) {
-    //     super(props, context);
-    // }
+    constructor(props){
+        super(props)
+        this.state = {
+            value: ''
+        }
+    }
+
+    handleClick(e){
+        this.setState({
+            value: e.target.value
+        })
+    }
+
     render() {
         return (
             <div id="home-header" className="clear-fix">
@@ -19,7 +29,7 @@ class HomeHeader extends React.Component {
                 <div className="home-header-middle">
                     <div className="search-container">
                         <i className="icon-search"></i>
-                        <input type="text" placeholder="请输入关键字"/>
+                        <input type="text" onChange={this.handleClick.bind(this)} value={this.state.value} placeholder="请输入关键字"/>
                     </div>
                 </div>
             </div>
