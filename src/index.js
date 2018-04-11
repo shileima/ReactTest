@@ -20,6 +20,7 @@ import Home from './App';
 //import Counter from './components/demo11';
 //import TodoApp from './components/demo14';
 import TodoApp from './components/demo15';
+import ComponentMount from './components/demo16';
 
 // import counter from './reducers';
 
@@ -34,8 +35,9 @@ const App = () => (
         <Main />
         {/* <button onClick={this.Back.bind(this)}>返回</button> */}
         {/* <button onClick={this.Goback.bind(this)}>返回上一页</button> */}
-        <TodoApp />
-        <DidMount />
+        {/*<TodoApp />*/}
+        {/*<DidMount />*/}
+        <ComponentMount />
     </div>
 )
 
