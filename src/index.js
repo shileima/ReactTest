@@ -35,8 +35,8 @@ const App = () => (
         <Main />
         {/* <button onClick={this.Back.bind(this)}>返回</button> */}
         {/* <button onClick={this.Goback.bind(this)}>返回上一页</button> */}
-        {/*<TodoApp />*/}
-        {/*<DidMount />*/}
+        <TodoApp />
+        <DidMount />
         <ComponentMount />
     </div>
 )
