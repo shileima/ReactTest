@@ -25,7 +25,7 @@ class Child extends Component {
 
     //收到新的 props 和 state 判断组件是否应该重新渲染
     shouldComponentUpdate(nextProps,nextState){
-        console.log('shouldComponentUpdate')
+        console.log('widget shouldComponentUpdate')
         //console.log(nextProps,nextState) //这里是新接收到的 state 和 props
         //console.log(this.props,this.state)
         //return false; // 阻止组件更新,阻止 dom 渲染
@@ -46,7 +46,7 @@ class Child extends Component {
         console.log(this.countTime)
         if(this.countTime>0){
             //setTimeout(()=>{this.forceUpdate()},1000)
-            this.forceUpdate()
+            //this.forceUpdate()
             //调用 forceUpdate() 会导致组件跳过 shouldComponentUpdate() ，执行 componentWillUpdate() 直接调用 render()。 这将触发子组件的正常生命周期方法，包括每个子组件的 shouldComponentUpdate() 方法。
         }
     }
