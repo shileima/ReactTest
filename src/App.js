@@ -43,20 +43,26 @@ class Home extends Component {
 
   componentDidMount(){
     // 箭头函数没有this指向,所以componentDidMount下的所有this指向class组件DidMount
-    let result = fetch('/api/get', {
-      credentials: 'include',
-      headers: {
-          'Accept': 'application/json, text/plain, */*'
-      }
-    });
-      
-    result.then(res => {
-      return res.text()
+    fetch('/api/get').then(res => {
+        return res.text()
     }).then(text => {
-      this.setState({
-        fetchData : text
+          this.setState({
+          fetchData : text
       })
-    })  
+    })
+
+    /*fetch('/api/get', {
+        credentials: 'include',
+        headers: {
+            'Accept': 'application/json, text/plain, *!/!*'
+        }
+    }).then(res => {
+        return res.text()
+    }).then(text => {
+        this.setState({
+        fetchData : text
+       })
+    })*/
     
 }
 
