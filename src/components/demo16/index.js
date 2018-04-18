@@ -18,7 +18,8 @@ class ComponentMount extends Component {
         })
         if(this.state.count === 3){
             ReactDOM.unmountComponentAtNode(this.refs.myDiv)
-            //this.refs.myDiv.remove();//这里是手动删除组件节点
+            //this.refs.myDiv.remove();//这里是手动删除组件节点,不同于unmountComponentAtNode()
+            //这是loading新加的内容
         }
         //this.refs.myDiv.remove();
     }
