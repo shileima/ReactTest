@@ -10,6 +10,7 @@ class ComponentMount extends Component {
         this.state = {
             count:0
         }
+        console.log('constructor')
     }
 
     componentWillReceiveProps(nextProps){
@@ -29,14 +30,14 @@ class ComponentMount extends Component {
         this.setState({
             count:2
         })
-        console.log('I did mounted! 挂载完成后 ' + this.state.count)
+        console.log('componentDidMount ' + this.state.count)
     }
 
     componentWillMount(){
         this.setState({
             count:1
         })
-        console.log('I will mount!挂载之前 ' + this.state.count)
+        console.log('componentWillMount ' + this.state.count)
     }
 
     shouldComponentUpdate(nextProps,nextState){

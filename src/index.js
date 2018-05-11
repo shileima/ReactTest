@@ -14,13 +14,14 @@ import Home from './App';
 // import RefDOM from './components/demo05';
 // import LikeButton from './components/demo06';
 // import Input from './components/demo07';
- import DidMount from './components/demo08';
+// import DidMount from './components/demo08';
 // import Ajax from './components/demo09';
 // import Axios from './components/demo10';
 //import Counter from './components/demo11';
 //import TodoApp from './components/demo14';
 import TodoApp from './components/demo15';
-import ComponentMount from './components/demo16';
+//import ComponentMount from './components/demo16';
+import ComponentRecycle from './components/componentRecyle';
 
 // import counter from './reducers';
 
@@ -34,8 +35,7 @@ const App = () => (
         <Header />
         <Main />
         <TodoApp />
-        <DidMount />
-        <ComponentMount />
+        <ComponentRecycle />
     </div>
 )
 
